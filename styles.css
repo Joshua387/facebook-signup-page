@@ -15,9 +15,11 @@ body {
 }
 
 .container1 {
-  margin-left: 34%;
-  margin-right: 34%;
-  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 460px;
+  padding: 0 16px 50px;
 }
 
 .image {
@@ -28,7 +30,8 @@ body {
 .container2 {
   display: flex;
   flex-direction: column;
-  border: 1px;
+  border: none;
+  outline: none;
   border-radius: 7px;
   background-color: rgb(255, 255, 255);
   text-align: center;
@@ -85,8 +88,6 @@ form ::placeholder {
   border-radius: 5px;
   width: 100%;
 }
-
-
 
 .input2 {
   font-size: 15px;
@@ -281,3 +282,58 @@ footer a:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 767px) {
+  .container1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 460px;
+    padding: 0 16px 50px;
+  }
+
+  .heading1 {
+  font-size: 18px;
+}
+
+.text1 {
+  font-size: 13px;
+  color: rgb(130, 126, 126);
+  /* margin-bottom: 15px; */
+}
+
+.container3 {
+  padding: 12px;
+}
+
+form ::placeholder {
+  font-size: 15px;
+  color: rgb(168, 167, 167);
+}
+
+
+.box3 {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.box4 {
+  width: 100%;
+}
+
+footer {
+  font-family: inherit;
+  font-size: 12px;
+
+  text-align: center;
+  text-align: left;
+  width: 100%;
+  padding: 40px 50px 10px;
+}
+
+footer i {
+  font-size: 13px;
+  color: #444343;
+  background-color: rgb(238, 238, 241);
+  padding: 3px 10px;
+}
+}
